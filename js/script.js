@@ -76,6 +76,7 @@ function catchMe(e){
 
 function resetScore(){
     localStorage.removeItem('game1HighScore');
+    highScoreBoard.textContent='HIGH SCORE: ' + 0;
 }
 moles.forEach(mole => mole.addEventListener('click', catchMe));
 
